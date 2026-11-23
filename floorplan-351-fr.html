@@ -327,25 +327,27 @@ const RED='#e11d48';
 const LEVELS={
 low:{name:'Niveau bas',tab:'Niveau bas · 5ᵉ étage',co:0,
  rooms:[
- {id:'liv',n:'Séjour / Cuisine',path:'M0 0H607V508H466V717H0Z',rects:[[0,0,607,508],[0,508,466,717]],fill:'#fbfaf4',lab:[184,193]},
- {id:'ent',n:'Entrée',path:'M607 406H727V717H607V573H592V508H607Z',rects:[[607,406,727,717],[592,508,607,573]],fill:'#f7f7f5',lab:[649,530]},
- {id:'ch1',n:'Chambre 1',path:'M612 151H974V495H727V401H612Z',rects:[[612,151,974,401],[727,401,974,495]],fill:'#f5f8fc',lab:[834,308]},
- {id:'wc',n:'WC',path:'M466 573H599V717H466Z',rects:[[466,573,599,717]],fill:'#eef6f8',lab:[552,587]},
- {id:'sde',n:'SDE',path:'M734 505H974V717H734Z',rects:[[734,505,974,717]],fill:'#eef6f8',lab:[809,572]},
+ {id:'liv',n:'Séjour / Cuisine',path:'M0 0H607V508H459V717H0Z',rects:[[0,0,607,508],[0,508,459,717]],fill:'#fbfaf4',lab:[184,193]},
+ {id:'ent',n:'Entrée',path:'M607 406H727V494H731V717H603V570H592V508H607Z',rects:[[607,406,727,494],[607,494,731,717],[592,508,607,570],[603,570,607,717]],fill:'#f7f7f5',lab:[649,530]},
+ {id:'ch1',n:'Chambre 1',path:'M612 151H974V494H727V406H679V401H612Z',rects:[[612,151,974,401],[727,401,974,494],[679,401,727,406]],fill:'#f5f8fc',lab:[834,308]},
+ {id:'wc',n:'WC',path:'M466 575H598V717H466Z',rects:[[466,575,598,717]],fill:'#eef6f8',lab:[552,587]},
+ {id:'sde',n:'SDE',path:'M736 499H799V504H974V670H894V717H736Z',rects:[[736,499,799,717],[799,504,974,670],[799,670,894,717]],fill:'#eef6f8',lab:[809,572]},
  {id:'log',n:'Loggia',path:'M638 -8H964V122H638Z',rects:[[638,-8,964,122]],fill:'#e7efe2',lab:[799,44]},
  {id:'ter',n:'Terrasse',path:'M-927 -41H-373V52H-31V666H-927Z',rects:[[-927,-41,-373,666],[-373,52,-31,666]],fill:'#e9dcc6',lab:[-507,505]}],
  off:{liv:36.80,ent:3.90,ch1:11.60,sde:4.75,wc:1.85,log:4.30,ter:57.40},
- closets:[[369,508,458,577,'PL','y1'],[466,508,555,573,'PL','y1']],wd:['N','N'],
+ closets:[[369,508,458,577,'PL','y1'],[466,508,555,570,'PL','y1']],wd:['N','N'],
+ walls:[[0,652,45,717],[207,652,277,717],[270,482,277,652],[207,482,270,487],[365,505,369,577]],
+ diag:[[273,662,323,717,7],[680,403,687,413,4],[729.5,485.6,731,495,4]],
  fixed:[
- {n:'Réfrigérateur (FR)',x0:0,y0:661,x1:39,y1:717,h:180,c:0xdfe4ea},
- {n:'Cuisson / plan de cuisine (sous soffite)',x0:46,y0:652,x1:206,y1:717,h:90,c:0xd8d3c6},
- {n:'Colonne LS · LV · tri sélectif',x0:206,y0:483,x1:277,y1:652,h:90,c:0xd8d3c6},
+ {n:'Réfrigérateur (FR)',x0:46,y0:652,x1:106,y1:717,h:180,c:0xdfe4ea},
+ {n:'Cuisson / plan de cuisine (sous soffite)',x0:106,y0:652,x1:207,y1:717,h:90,c:0xd8d3c6},
+ {n:'Colonne LS · LV · tri sélectif',x0:207,y0:487,x1:270,y1:652,h:90,c:0xd8d3c6},
  {n:'Escalier (1ʳᵉ volée)',x0:280,y0:524,x1:369,y1:717,nb:1},
  {n:'Escalier (palier tournant)',x0:369,y0:669,x1:458,y1:717,nb:1},
  {n:'Rangement sous escalier (RGT, Ht < 1,80 m)',x0:369,y0:577,x1:458,y1:669,h:170,c:0xdad4c6},
- {n:'Tableau électrique (ETEL)',x0:555,y0:508,x1:592,y1:573,h:200,c:0xb8bcc4},
- {n:'Toilettes (WC)',x0:468,y0:654,x1:534,y1:717,h:40,c:0xf4f8fa},{n:'Lave-mains',x0:559,y0:683,x1:599,y1:717,h:85,c:0xe6e9ed},
- {n:'Toilettes (SDE)',x0:832,y0:644,x1:877,y1:717,h:40,c:0xf4f8fa},{n:'Douche 80 × 100',x0:894,y0:572,x1:974,y1:672,h:2,c:0xaed6ea},
+ {n:'Tableau électrique (ETEL)',x0:556,y0:508,x1:592,y1:570,h:200,c:0xb8bcc4},
+ {n:'Toilettes (WC)',x0:468,y0:654,x1:534,y1:717,h:40,c:0xf4f8fa},{n:'Lave-mains',x0:558,y0:683,x1:598,y1:717,h:85,c:0xe6e9ed},
+ {n:'Toilettes (SDE)',x0:832,y0:644,x1:877,y1:717,h:40,c:0xf4f8fa},{n:'Douche 80 × 100',x0:894,y0:570,x1:974,y1:670,h:2,c:0xaed6ea},
  {n:'Bac jardinière (Ht 45 cm)',x0:-995,y0:-10,x1:-927,y1:158,h:45,c:0x6f8f5a},{n:'Bac jardinière (Ht 45 cm)',x0:-995,y0:160,x1:-927,y1:330,h:45,c:0x6f8f5a},
  {n:'Bac jardinière (Ht 45 cm)',x0:-995,y0:369,x1:-927,y1:511,h:45,c:0x6f8f5a},{n:'Bac jardinière (Ht 45 cm)',x0:-995,y0:541,x1:-927,y1:662,h:45,c:0x6f8f5a},
  {n:'Banquette (Ht 45 cm)',x0:-1009,y0:666,x1:-31,y1:722,h:45,c:0xb99a78},
@@ -359,24 +361,23 @@ low:{name:'Niveau bas',tab:'Niveau bas · 5ᵉ étage',co:0,
  {id:'x:S',room:'x',n:'Outside – bottom (entrance side)',x1:993,y1:738,x2:-31,y2:738,nx:0,ny:1,h:0},
  {id:'x:W',room:'x',n:'Outside – left (terrace side)',x1:-31,y1:738,x2:-31,y2:-29,nx:-1,ny:0,h:0}],
  doors:[ // hinge, radius, closed-leaf angle a0 (deg, y down), sweep sign, opening rect
- {n:'Entry door',hx:726,hy:717,r:98,a0:180,sg:1,op:[628,717,726,738]},
- {n:'Terrace door 1',glass:1,hx:0,hy:202,r:80,a0:90,sg:-1,op:[-31,202,0,342]},
- {n:'Terrace door 1 (leaf 2)',g:'Terrace door 1',glass:1,hx:0,hy:342,r:60,a0:270,sg:1,op:[-31,342,0,342]},
- {n:'Terrace door 2',glass:1,hx:0,hy:522,r:80,a0:90,sg:-1,op:[-31,522,0,643]},
- {n:'Terrace door 2 (leaf 2)',g:'Terrace door 2',glass:1,hx:0,hy:643,r:60,a0:270,sg:1,op:[-31,643,0,643]},
- {n:'Loggia door (leaf 1)',glass:1,hx:700,hy:153,r:78,a0:0,sg:1,op:[700,151,820,151]},
- {n:'Loggia door (leaf 2)',g:'Loggia door (leaf 1)',glass:1,hx:820,hy:153,r:39,a0:180,sg:-1,op:[820,151,820,151]},
- {n:'Chambre 1 door',hx:726.5,hy:489,r:84.5,a0:241.6,sg:1,op:[686,415,686,415]},
- {n:'WC door',oa:30,hx:603,hy:661,r:81,a0:270,sg:1,op:[599,580,607,661]},
- {n:'SDE sliding door',slide:1,hx:870,hy:500,r:1,a0:0,sg:1,op:[870,495,974,505]}],
+ {n:'Entry door',hx:726,hy:717,r:100,a0:180,sg:1,op:[626,717,726,738]},
+ {n:'Terrace door 1',glass:1,hx:0,hy:201,r:80,a0:90,sg:-1,op:[-31,200,0,342]},
+ {n:'Terrace door 1 (leaf 2)',g:'Terrace door 1',glass:1,hx:0,hy:341,r:60,a0:270,sg:1,op:[-31,342,0,342]},
+ {n:'Terrace door 2',glass:1,hx:0,hy:522,r:60,a0:90,sg:-1,op:[-31,520,0,644]},
+ {n:'Terrace door 2 (leaf 2)',g:'Terrace door 2',glass:1,hx:0,hy:642,r:60,a0:270,sg:1,op:[-31,644,0,644]},
+ {n:'Loggia door (leaf 1)',glass:1,hx:699,hy:151,r:81,a0:0,sg:1,op:[698,122,820,151]},
+ {n:'Loggia door (leaf 2)',g:'Loggia door (leaf 1)',glass:1,hx:820,hy:151,r:40,a0:180,sg:-1,op:[820,151,820,151]},
+ {n:'Chambre 1 door',hx:729.5,hy:485.6,r:83.7,a0:239.65,sg:1,op:[686,415,686,415]},
+ {n:'WC door',oa:30,hx:603,hy:663,r:85,a0:270,sg:1,op:[598,578,603,663]},
+ {n:'SDE sliding door',slide:1,dir:1,hx:809,hy:499,r:1,a0:0,sg:1,op:[809,494,889,504]}],
  win:()=>[
  {id:1,n:'Séjour window 1',x0:99,x1:243,y0:-29,y1:0,lim:[0,607],sill:55,hgt:150},
- {id:2,n:'Séjour window 2',x0:403,x1:547,y0:-29,y1:0,lim:[0,607],sill:55,hgt:150},
- {id:3,n:'Loggia glazing',x0:703,x1:903,y0:122,y1:151,lim:[617,964],sill:0,hgt:210}],
- fixedWin:[{id:11,n:'Terrace glazing 1',x0:-31,x1:0,y0:202,y1:418,lim:[-31,0],sill:0,hgt:210,fixed:true},{id:12,n:'Terrace glazing 2',x0:-31,x1:0,y0:522,y1:643,lim:[-31,0],sill:0,hgt:210,fixed:true}],
+ {id:2,n:'Séjour window 2',x0:403,x1:547,y0:-29,y1:0,lim:[0,607],sill:55,hgt:150}],
+ fixedWin:[{id:3,n:'Loggia glazing',x0:820,x1:902,y0:122,y1:151,lim:[820,902],sill:0,hgt:210,fixed:true},{id:11,n:'Terrace glazing 1',x0:-31,x1:0,y0:342,y1:423,lim:[-31,0],sill:0,hgt:210,fixed:true}],
  bounds:{x0:-1090,y0:-120,x1:1040,y1:800},raster:[-1050,-60,1000,745],outer:[-31,-29,993,738],lowwall:[[638,-29,964,-8]],sb:[0,775],cam:{iso:[[0,1350,1650],[0,0,350]],top:[[0,2200,360],[0,0,350]],walk:[[330,160,640],[300,120,250]],target:[0,0,350]},
  roofHole:[[369,496,458,612]],stair:{x0:280,x1:458,cx:369,cy:626,yt:496,y1:717,td:25.5,n:4,mode:'up',rails:[]},
- circles:[[825,577,75],[700,311,75]],open:[[607,406,607,508],[592,508,607,508],[727,406,727,495]],redl:[],
+ circles:[[825,577,75],[700,311,75]],open:[[607,406,607,508],[592,508,607,508],[727,406,727,494],[679,401,727,406]],redl:[],
  ann:[
  ['All.v : 55 cm',171,-36,{s:8}],['All.v : 55 cm',475,-36,{s:8}],['Seuil : 6 cm',791,160,{s:8}],['VR PF',714,158,{s:7}],['FIXE',858,158,{s:7}],['GC',846,-7,{s:8}],
  ['Seuil : 19 cm',6,288,{r:-90,s:8}],['Seuil : 19 cm',6,611,{r:-90,s:8}],['VR PF',6,226,{r:-90,s:7}],['VR PF',6,532,{r:-90,s:7}],['FIXE',6,380,{r:-90,s:8}],
@@ -401,40 +402,42 @@ low:{name:'Niveau bas',tab:'Niveau bas · 5ᵉ étage',co:0,
   h+=`<path d="M679 742L669 758H676V772H682V758H689Z" fill="${RED}"/>`;
   return h;},
  dims:()=>dimH(0,607,44,'607')+dimV(0,717,16,'717')+dimV(0,508,288,'482')+dimH(617,974,266,'362')+dimV(151,495,768,'344')
-   +dimH(734,974,610,'238')+dimV(495,717,744,'218')+dimH(607,727,690,'128')+dimH(466,599,640,'132')+dimV(573,717,484,'142')
+   +dimH(736,974,610,'238')+dimV(499,717,744,'218')+dimH(603,731,690,'128')+dimH(466,598,640,'132')+dimV(575,717,484,'142')
    +dimH(638,964,-20,'320')+dimV(-8,122,650,'135')+dimH(-927,-30,300,'893')+dimV(-41,650,-640,'674')+dimV(65,650,-100,'599')+dimV(508,573,562,'65')+dimH(1,46,640,'')},
 high:{name:'Niveau haut',tab:'Niveau haut · 6ᵉ étage',co:10,
  rooms:[
- {id:'ch3',n:'Chambre 3',path:'M0 0H279V336H0Z',rects:[[0,0,279,336]],fill:'#f5f8fc',lab:[126,133]},
- {id:'ch2',n:'Chambre 2',path:'M287 0H566V336H287Z',rects:[[287,0,566,336]],fill:'#f5f8fc',lab:[433,133]},
- {id:'dgt',n:'Dégagement',path:'M172 342H411V439H172Z',rects:[[172,342,411,439]],fill:'#f7f7f5',lab:[295,383]},
- {id:'sdh',n:'SDE / WC',path:'M0 342H165V439H212V660H0Z',rects:[[0,342,165,439],[0,439,212,660]],fill:'#eef6f8',lab:[86,471]},
- {id:'sta',n:'Escalier',path:'M217 439H411V660H217Z',rects:[[217,439,411,660]],fill:'#ece8df',lab:null},
- {id:'mez',n:'Mezzanine',path:'M411 342H566V660H411Z',rects:[[411,342,566,660]],fill:'#fbfaf4',lab:[483,449]}],
+ {id:'ch3',n:'Chambre 3',path:'M-18 -18H49V-60H179V-18H279V336H-18Z',rects:[[-18,-18,279,336],[49,-60,179,-18]],fill:'#f5f8fc',lab:[126,133]},
+ {id:'ch2',n:'Chambre 2',path:'M284 -18H354V-60H484V-18H563V336H284Z',rects:[[284,-18,563,336],[354,-60,484,-18]],fill:'#f5f8fc',lab:[433,133]},
+ {id:'dgt',n:'Dégagement',path:'M166 341H408V438H166Z',rects:[[166,341,408,438]],fill:'#f7f7f5',lab:[295,383]},
+ {id:'sdh',n:'SDE / WC',path:'M-18 341H161V443H212V519H149V639H69V659H-18V589H-60V459H-18Z',rects:[[-18,341,161,443],[-18,443,212,519],[-18,519,149,639],[-18,639,69,659],[-60,459,-18,589]],fill:'#eef6f8',lab:[86,471]},
+ {id:'sta',n:'Escalier',path:'M219 438H408V659H219Z',rects:[[219,438,408,659]],fill:'#ece8df',lab:null},
+ {id:'mez',n:'Mezzanine',path:'M408 341H563V659H408Z',rects:[[408,341,563,659]],fill:'#fbfaf4',lab:[483,449]}],
  off:{ch3:10.15,ch2:10.15,dgt:2.35,sdh:6.00,mez:4.95},
- closets:[[380,271,566,336,'PL','y1']],wd:['N'],
+ closets:[[385,271,563,336,'PL','y1']],wd:['N'],
+ walls:[[25,-90,54,-65],[174,-90,203,-65],[330,-90,359,-65],[479,-90,508,-65],[-90,435,-65,464],[-90,584,-65,613],[379,271,385,336]],
+ diag:[[212,605,264,658,7]],
  fixed:[
- {n:'Escalier (descente)',x0:217,y0:439,x1:411,y1:660,nb:1},
- {n:'Cabine de douche',x0:69,y0:510,x1:144,y1:630,h:2,c:0xaed6ea},{n:'Lavabo',x0:167,y0:443,x1:212,y1:503,h:85,c:0xe6e9ed},
- {n:'WC',x0:13,y0:585,x1:60,y1:660,h:40,c:0xf4f8fa},
- {n:'Garde-corps (Ht 1,01 m)',x0:217,y0:437,x1:304,y1:441,h:101,c:0x9aa3ad},{n:'Garde-corps (Ht 1,01 m)',x0:399,y0:439,x1:403,y1:660,h:101,c:0x9aa3ad}],
+ {n:'Escalier (descente)',x0:219,y0:438,x1:408,y1:659,nb:1},
+ {n:'Cabine de douche',x0:69,y0:519,x1:149,y1:639,h:2,c:0xaed6ea},{n:'Lavabo',x0:160,y0:449,x1:212,y1:519,h:85,c:0xe6e9ed},
+ {n:'WC',x0:13,y0:585,x1:60,y1:659,h:40,c:0xf4f8fa},
+ {n:'Garde-corps (Ht 1,01 m)',x0:219,y0:436,x1:304,y1:440,h:101,c:0x9aa3ad},{n:'Garde-corps (Ht 1,01 m)',x0:399,y0:438,x1:403,y1:659,h:101,c:0x9aa3ad}],
  posts:[],
  ext:[
- {id:'y:N',room:'x',n:'Outside – top',x1:-50,y1:-90,x2:585,y2:-90,nx:0,ny:-1,h:0},
- {id:'y:E',room:'x',n:'Outside – right',x1:585,y1:-90,x2:585,y2:680,nx:1,ny:0,h:0},
- {id:'y:S',room:'x',n:'Outside – bottom',x1:585,y1:680,x2:-50,y2:680,nx:0,ny:1,h:0},
- {id:'y:W',room:'x',n:'Outside – left',x1:-50,y1:680,x2:-50,y2:-90,nx:-1,ny:0,h:0}],
+ {id:'y:N',room:'x',n:'Outside – top',x1:-65,y1:-65,x2:581,y2:-65,nx:0,ny:-1,h:0},
+ {id:'y:E',room:'x',n:'Outside – right',x1:581,y1:-65,x2:581,y2:677,nx:1,ny:0,h:0},
+ {id:'y:S',room:'x',n:'Outside – bottom',x1:581,y1:677,x2:-65,y2:677,nx:0,ny:1,h:0},
+ {id:'y:W',room:'x',n:'Outside – left',x1:-65,y1:677,x2:-65,y2:-65,nx:-1,ny:0,h:0}],
  doors:[
- {n:'Chambre 3 door',hx:269,hy:339,r:78,a0:180,sg:1,op:[191,334,269,344]},
- {n:'Chambre 2 door',hx:295,hy:339,r:81,a0:0,sg:-1,op:[295,334,376,344]},
- {n:'Chambre 3 → SDE door',hx:159,hy:339,r:81,a0:180,sg:-1,op:[78,334,159,344]}],
+ {n:'Chambre 3 door',hx:272,hy:338.5,r:85,a0:180,sg:1,op:[187,336,272,341]},
+ {n:'Chambre 2 door',hx:292,hy:338.5,r:85,a0:0,sg:-1,op:[292,336,377,341]},
+ {n:'SDE / WC door',hx:163.5,hy:350,r:85,a0:90,sg:1,op:[161,350,166,435]}],
  win:()=>[
- {id:1,n:'Chambre 3 window',x0:58,x1:175,y0:-90,y1:0,lim:[0,279],sill:85,hgt:130},
- {id:2,n:'Chambre 2 window',x0:367,x1:486,y0:-90,y1:0,lim:[287,566],sill:85,hgt:130}],
- fixedWin:[{id:3,n:'SDE window (frosted glass)',x0:-50,x1:0,y0:458,y1:578,lim:[-50,0],sill:85,hgt:100,fixed:true}],
- bounds:{x0:-150,y0:-170,x1:680,y1:760},raster:[-60,-120,640,720],outer:[-50,-90,585,680],lowwall:[],sb:[0,735],cam:{iso:[[260,950,1000],[260,0,300]],top:[[260,1300,310],[260,0,300]],walk:[[150,160,500],[200,120,250]],target:[260,0,300]},
- stair:{x0:217,x1:399,cx:304,cy:570,yt:439,y1:660,td:26.5,n:4,mode:'down',rails:[[217,439,304,439],[399,439,399,660]]},
- circles:[],open:[[411,342,411,660],[217,439,411,439]],
+ {id:1,n:'Chambre 3 window',x0:54,x1:174,y0:-90,y1:-60,lim:[49,179],sill:85,hgt:130},
+ {id:2,n:'Chambre 2 window',x0:359,x1:479,y0:-90,y1:-60,lim:[354,484],sill:85,hgt:130}],
+ fixedWin:[{id:3,n:'SDE window (frosted glass)',x0:-90,x1:-60,y0:464,y1:584,lim:[-90,-60],sill:85,hgt:100,fixed:true}],
+ bounds:{x0:-150,y0:-170,x1:680,y1:760},raster:[-100,-100,640,720],outer:[-65,-65,581,677],lowwall:[],sb:[0,735],cam:{iso:[[260,950,1000],[260,0,300]],top:[[260,1300,310],[260,0,300]],walk:[[150,160,500],[200,120,250]],target:[260,0,300]},
+ stair:{x0:219,x1:399,cx:304,cy:570,yt:438,y1:659,td:26.5,n:4,mode:'down',rails:[[219,438,304,438],[399,438,399,659]]},
+ circles:[],open:[[408,341,408,659],[219,438,408,438]],
  redl:[[0,0,50,0],[178,0,353,0],[483,0,566,0],[0,0,0,336],[0,342,0,459],[0,590,0,660]],
  ann:[
  ['All.v : 85 cm',117,-96,{s:8}],['All.v : 85 cm',426,-96,{s:8}],['All.v : 85 cm',-58,470,{r:-90,s:8}],['Verre dépoli',-16,520,{r:-90,s:7}],
@@ -444,8 +447,8 @@ high:{name:'Niveau haut',tab:'Niveau haut · 6ᵉ étage',co:10,
  ['LIMITE Ht 1,10 m',-10,223,{r:-90,s:7}],['LIMITE Ht 1,80 m',11,223,{r:-90,s:7,c:RED}],['LIMITE Ht 1,10 m',-10,618,{r:-90,s:7}],['LIMITE Ht 1,80 m',9,618,{r:-90,s:7,c:RED}],
  ['Niveau Haut',290,745,{s:16}]],
  deco:()=>ln(212,605,264,658,'#14171b',3),
- dims:()=>dimH(0,279,200,'279')+dimH(287,566,200,'279')+dimV(0,336,140,'336')+dimV(0,271,540,'271')+dimH(172,414,375,'242')
-   +dimH(411,566,375,'155')+dimV(342,439,190,'97')+dimH(0,212,450,'212')+dimV(342,660,20,'318')+dimH(217,399,520,'182')+dimV(271,336,550,'65')}
+ dims:()=>dimH(0,279,200,'279')+dimH(284,563,200,'279')+dimV(0,336,140,'336')+dimV(0,271,540,'271')+dimH(166,408,375,'242')
+   +dimH(408,563,375,'155')+dimV(341,438,190,'97')+dimH(0,212,450,'212')+dimV(341,659,20,'318')+dimH(217,399,520,'182')+dimV(271,336,550,'65')}
 };
 let CUR='low',LV_=LEVELS.low,ROOMS,WALK,CLOSETS,FIXED,FACES,EXT,ALLFACES,FIX,DOORS,WD_DEF,BOUNDS,CO=0;
 const BLUE=[0,0,0,0],WSIDES={N:'Top edge',E:'Right edge',S:'Bottom edge',W:'Left edge'};
@@ -460,12 +463,18 @@ function applyGeom(n){
    const dir=hor?(ny>0?'top wall':'bottom wall'):(nx>0?'left wall':'right wall');cnt[dir]=(cnt[dir]||0)+1;
    list.push({id:r.id+':'+k,room:r.id,rn:r.n,x1:a[0],y1:a[1],x2:b[0],y2:b[1],nx,ny,dir,h:r.id==='ter'?1:(r.id==='log'&&hor&&ny>0)?110:0});}
   const seen={};for(const f of list){seen[f.dir]=(seen[f.dir]||0)+1;f.n=r.n+' – '+f.dir+(cnt[f.dir]>1?' ('+seen[f.dir]+')':'');FACES.push(f);}});
- ALLFACES=[...FACES,...EXT];FIX=FIXED.concat(CLOSETS.map(c=>({n:'Closet',x0:c[0],y0:c[1],x1:c[2],y1:c[3]})));}
+ ALLFACES=[...FACES,...EXT];FIX=FIXED.concat(CLOSETS.map(c=>({n:'Closet',x0:c[0],y0:c[1],x1:c[2],y1:c[3]})),(LV_.walls||[]).map(q=>({n:'Wall',x0:q[0],y0:q[1],x1:q[2],y1:q[3]})));}
 applyGeom('low');
 const faceById=id=>ALLFACES.find(f=>f.id===id);
 const wcol=id=>(S.o.wallc&&S.o.wallc[id])||('xy'.includes(id[0])&&id[1]===':'?'#d9d6cf':'#ece9e2');
 const defWin=()=>LV_.win().concat(LV_.fixedWin.map(w=>({...w})));
-function ensureFixed(){for(const fw of LV_.fixedWin){if(!S.windows.find(w=>w.id===fw.id))S.windows.push({...fw});}}
+const WIN_OLD={high:{1:[58,175],2:[367,486]}},winSynced=new WeakSet();
+function syncWin(list){const fx=LV_.fixedWin,df=LV_.win(),out=[];
+ for(const w of list){const f=fx.find(q=>q.id===w.id);if(f){out.push({...f});continue;}if(w.fixed)continue;const d=df.find(q=>q.id===w.id);if(!d){out.push(w);continue;}
+  const old=(WIN_OLD[CUR]||{})[w.id],same=old&&w.x0===old[0]&&w.x1===old[1],l=Math.min(w.x1-w.x0,d.lim[1]-d.lim[0]),x0=same?d.x0:Math.max(d.lim[0],Math.min(w.x0,d.lim[1]-l));
+  out.push({...w,x0,x1:same?d.x1:x0+l,y0:d.y0,y1:d.y1,lim:d.lim,n:d.n});}
+ for(const f of fx)if(!out.find(w=>w.id===f.id))out.push({...f});return out;}
+function ensureFixed(){if(!winSynced.has(S.windows)){S.windows=syncWin(S.windows);winSynced.add(S.windows);}for(const fw of LV_.fixedWin){if(!S.windows.find(w=>w.id===fw.id))S.windows.push({...fw});}}
 // ---- wardrobes: per-wardrobe door side (N/E/S/W) and swing (out/in), editable in the right panel ----
 const WK=i=>i+CO;
 const wside=i=>(S.o.wcfg&&S.o.wcfg[WK(i)]&&S.o.wcfg[WK(i)].side)||WD_DEF[i];
@@ -628,6 +637,8 @@ function renderPlan(){ensureFixed();
  CLOSETS.forEach((c,ci)=>h+=`<rect data-ward="${ci}" style="cursor:pointer" x="${c[0]}" y="${c[1]}" width="${c[2]-c[0]}" height="${c[3]-c[1]}" fill="url(#hatch)" stroke="#3b4048" stroke-width="1.2" vector-effect="non-scaling-stroke"/><text pointer-events="none" x="${(c[0]+c[2])/2}" y="${(c[1]+c[3])/2}" font-size="10" text-anchor="middle" fill="#59616d" ${halo}>${c[4]}</text><text pointer-events="none" x="${(c[0]+c[2])/2}" y="${(c[1]+c[3])/2+12}" font-size="9" text-anchor="middle" fill="#59616d" ${halo}>${fmt(c[2]-c[0])} × ${fmt(c[3]-c[1])}</text>`);
  // outlines
  for(const r of ROOMS)h+=`<path d="${r.path}" fill="none" stroke="#14171b" stroke-width="1.6" vector-effect="non-scaling-stroke"/>`;
+ for(const q of LV_.walls||[])h+=`<rect x="${q[0]}" y="${q[1]}" width="${q[2]-q[0]}" height="${q[3]-q[1]}" fill="#3b4048"/>`;
+ for(const q of LV_.diag||[])h+=`<line x1="${q[0]}" y1="${q[1]}" x2="${q[2]}" y2="${q[3]}" stroke="#3b4048" stroke-width="${q[4]}" stroke-linecap="square"/>`;
  for(const q of LV_.open)h+=ln(q[0],q[1],q[2],q[3],'#f9f9f4',3.4);
  // wall-face colours (coloured strip beside the wall) + clickable hit areas
  for(const f of ALLFACES){const col=S.o.wallc&&S.o.wallc[f.id],ox=f.nx*2.5,oy=f.ny*2.5,hx=f.nx*5,hy=f.ny*5;
@@ -1107,11 +1118,11 @@ const dKey=d=>((typeof CUR!=='undefined')?CUR+':':'')+(d.g||d.n);
 const doorIsOpen=d=>!!(S.o.dOpen&&S.o.dOpen[dKey(d)]);
 const doorLeaf=d=>d.r>1||d.slide;
 function doorTip(d,open){ // free end of the leaf in plan
- if(d.slide)return[open?d.op[0]-(d.op[2]-d.op[0])/2:(d.op[0]+d.op[2])/2,d.hy];
+ if(d.slide){const L=d.op[2]-d.op[0];return[open?d.hx+(d.dir||-1)*L+L/2:(d.op[0]+d.op[2])/2,d.hy];}
  const a=(d.a0+(open?d.sg*(d.oa||DOOR_ANG):0))*Math.PI/180;return[d.hx+d.r*Math.cos(a),d.hy+d.r*Math.sin(a)];}
 function updDoors3D(){if(typeof T3==='undefined'||!T3||!T3.doors)return;
  T3.doors.forEach(o=>{if(!o)return;const d=o.d,open=doorIsOpen(d);
-  if(d.slide)o.pv.position.x=d.hx-(open?o.len:0);else o.pv.rotation.y=-(d.a0+(open?d.sg*(d.oa||DOOR_ANG):0))*Math.PI/180;});}
+  if(d.slide)o.pv.position.x=d.hx+(open?(d.dir||-1)*o.len:0);else o.pv.rotation.y=-(d.a0+(open?d.sg*(d.oa||DOOR_ANG):0))*Math.PI/180;});}
 function afterDoorChange(){save();renderPlan();updDoors3D();if(typeof renderDyn==='function')renderDyn();}
 function toggleDoor(i){const d=DOORS[i];if(!d)return;const o=!doorIsOpen(d);
  DOORS.forEach(q=>{if(dKey(q)===dKey(d))(S.o.dOpen=S.o.dOpen||{})[dKey(q)]=o;});afterDoorChange();toast(o?'Door open':'Door closed');}
@@ -1190,7 +1201,7 @@ function buildStructure(){
  const WH=S.o.wallH||250,g=new THREE.Group(),fl=new THREE.Group(),fx=new THREE.Group();
  const[X0,Y0,X1,Y1]=LV_.raster,W=X1-X0,H=Y1-Y0,m=new Uint8Array(W*H).fill(6);
  const fill=(r,t)=>{for(let y=Math.max(r[1],Y0);y<Math.min(r[3],Y1);y++)for(let x=Math.max(r[0],X0);x<Math.min(r[2],X1);x++)m[(y-Y0)*W+(x-X0)]=t;};
- fill(LV_.outer,0);ROOMS.forEach(r=>r.rects.forEach(q=>fill(q,r.id==="ter"?5:1)));DOORS.forEach(d=>fill(d.op,2));S.windows.forEach((w,i)=>fill([w.x0,w.y0,w.x1,w.y1],10+i));
+ fill(LV_.outer,0);ROOMS.forEach(r=>r.rects.forEach(q=>fill(q,r.id==="ter"?5:1)));(LV_.walls||[]).forEach(q=>fill(q,0));DOORS.forEach(d=>fill(d.op,2));S.windows.forEach((w,i)=>fill([w.x0,w.y0,w.x1,w.y1],10+i));
  CLOSETS.forEach((c,i)=>{const g=wgeom(i);
   const r=[c[0]+2,c[1]+2,c[2]-2,c[3]-2];
   if(g.sd==='S')r[3]=c[3];else if(g.sd==='N')r[1]=c[1];else if(g.sd==='E')r[2]=c[2];else r[0]=c[0];
@@ -1210,6 +1221,7 @@ function buildStructure(){
  const wm=new THREE.MeshStandardMaterial({color:0xece9e2,roughness:.95}),gm=new THREE.MeshStandardMaterial({color:0x9fd0ee,transparent:true,opacity:.3,roughness:.1});
  const bx=(b,a,z,mat,wid)=>{const w=b.x1-b.x0,d=b.y1-b.y0,me=new THREE.Mesh(new THREE.BoxGeometry(w,z-a,d),mat);me.position.set(X0+b.x0+w/2,(a+z)/2,Y0+b.y0+d/2);me.castShadow=mat===wm;me.receiveShadow=true;if(wid)me.userData.win=wid;g.add(me);};
  for(const b of done){if(b.t===0)bx(b,0,WH,wm);else if(b.t===4)bx(b,0,110,wm);else if(b.t===2)bx(b,Math.min(205,WH-5),WH,wm);else if(b.t>=10){const w=S.windows[b.t-10],top=Math.min(WH,w.sill+w.hgt);if(w.sill>0)bx(b,0,Math.min(w.sill,WH),wm);if(top<WH)bx(b,top,WH,wm);bx(b,w.sill,top,gm,w.id);}}
+ for(const q of LV_.diag||[]){const L=Math.hypot(q[2]-q[0],q[3]-q[1]),me=new THREE.Mesh(new THREE.BoxGeometry(L+q[4]*.5,WH,q[4]),wm);me.position.set((q[0]+q[2])/2,WH/2,(q[1]+q[3])/2);me.rotation.y=-Math.atan2(q[3]-q[1],q[2]-q[0]);me.castShadow=me.receiveShadow=true;g.add(me);}
  const floor=(q,c)=>{const w=q[2]-q[0],d=q[3]-q[1],me=new THREE.Mesh(new THREE.BoxGeometry(w,2,d),new THREE.MeshStandardMaterial({color:c,roughness:.9}));me.position.set(q[0]+w/2,-1,q[1]+d/2);me.receiveShadow=true;fl.add(me);};
  ROOMS.forEach(r=>{if(ROOMCOL[r.id])r.rects.forEach(q=>floor(q,ROOMCOL[r.id]));});DOORS.forEach(d=>floor(d.op,"#bfa07a"));
  const fb=(f,h,c,y0=0)=>{const w=f.x1-f.x0,d=f.y1-f.y0,me=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color:c,roughness:.7}));me.position.set(f.x0+w/2,y0+h/2,f.y0+d/2);me.castShadow=me.receiveShadow=true;fx.add(me);return me;};
@@ -1509,6 +1521,7 @@ function walkBlocked(px,py){
  for(let k=0;k<8;k++){const a=k*Math.PI/4,x=px+Math.cos(a)*WALK_R,y=py+Math.sin(a)*WALK_R;if(!(walk(x,y,0)||inOps(x,y)))return true;}
  if(!(walk(px,py,0)||inOps(px,py)))return true;
  if(doorBlocks(px,py))return true;
+ for(const q of LV_.diag||[])if(distSeg(px,py,[[q[0],q[1]],[q[2],q[3]]])<WALK_R*.55+q[4]/2)return true;
  for(const f of FIX){if(f.nb)continue;const dx=px-Math.max(f.x0,Math.min(px,f.x1)),dy=py-Math.max(f.y0,Math.min(py,f.y1));if(dx*dx+dy*dy<WALK_R*WALK_R)return true;}
  for(const it of S.items){if(ghost(it)||itemZ(it)>=100||itemZ(it)+itemH(it)<8)continue;
   const[lx,ly]=toLocal(it,px,py),dx=lx-Math.max(-it.w/2,Math.min(lx,it.w/2)),dy=ly-Math.max(-it.d/2,Math.min(ly,it.d/2));if(dx*dx+dy*dy<WALK_R*WALK_R)return true;}
